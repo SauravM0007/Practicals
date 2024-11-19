@@ -4,6 +4,16 @@ Commands to run the file are:-
 - ./a.out
   
 1. Write a Lexical Analyzer program that identifies any 10 keywords from C language and identifiers following all the naming conventions of the C program.
+THEORY:
+A Lexical Analyzer, commonly referred to as a scanner or tokenizer, is the first crucial
+phase of a compiler. Its purpose is to read the raw source code provided as input and
+break it down into meaningful atomic units known as tokens. These tokens are the
+smallest identifiable components of a program, representing variables, constants,
+operators, delimiters, and keywords. In the broader context of compiler design, the
+lexical analyzer sits between the source code and the syntax analyzer (parser), serving
+as an intermediary to preprocess the input into a token stream, which the syntax
+analyzer uses to further validate the structure of the program.
+Code:
 #include <stdio.h>
 #include <string.h>
 #define keyword_count 10
@@ -112,7 +122,7 @@ std::cout << pair.first << ": " << pair.second << std::endl;
 return 0;
 }
 
-3. Write a Syntax Analyzer program using Yacc tool that will have grammar rules for the operators : *,/,%.
+4. Write a Syntax Analyzer program using Yacc tool that will have grammar rules for the operators : *,/,%.
 Lex Code :
 %{
 #include <stdio.h>
